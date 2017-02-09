@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h3>Random Passcode (passcode #@ViewBag.numVisited)</h3>
+<h1>@ViewBag.password</h1>
+<form action="generate" method="post">
+    <button type="submit" class="btn btn-success">Generate</button>
+</form>
+<style>
+    *{
+        text-align: center;
+    }
+    h1{
+        border: 2px solid black;
+        display: inline-block;
+        width: 400px;
+    }
+</style>
